@@ -13,7 +13,7 @@ public class moveBall : MonoBehaviour
     private GameObject[] sphereArray;
 
     [SerializeField]
-    
+
     private float[] speeds;
 
     private float startingSpeed = 1.0f;
@@ -29,7 +29,7 @@ public class moveBall : MonoBehaviour
 
         for (int i=0;  i < speeds.Length; i++) {
             speeds[i] = startingSpeed;
-            startingSpeed += 0.1f;
+            startingSpeed += 0.3f;
         }
 
         for (int j = 0; j < sphereArray.Length; j++){
@@ -37,7 +37,6 @@ public class moveBall : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void Update() {
         float vertical = Input.GetAxis("Vertical");
         float horizontal = Input.GetAxis("Horizontal");
