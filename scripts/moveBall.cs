@@ -4,9 +4,16 @@ using UnityEngine;
 
 public class moveBall : MonoBehaviour
 {
+    [SerializeField]
+   
+    private Vector2   speedRange;
     
+    [SerializeField]
+
     private GameObject[] sphereArray;
 
+    [SerializeField]
+    
     private float[] speeds;
 
     private float startingSpeed = 1.0f;
